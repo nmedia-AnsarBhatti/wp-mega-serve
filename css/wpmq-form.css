@@ -1,0 +1,31 @@
+/* Form */
+.wmq-main-header {
+  width: 45%;
+    -webkit-box-shadow: 0 5px 15px rgba(0,0,0,.5);
+}
+.form-btn {
+    border-radius: 7px;
+    text-align: center;
+    background: #ef3b3a;
+    color: white;
+    height: 42px;
+}
+.form .thumbnail {  
+  background: #EF3B3A;
+  width: 150px;
+  height: 150px;
+  margin: 0 auto 30px;
+  padding: 50px 30px;
+  border-top-left-radius: 100%;
+  border-top-right-radius: 100%;
+  border-bottom-left-radius: 100%;
+  border-bottom-right-radius: 100%;
+  box-sizing: border-box;
+}
+.form .thumbnail img {
+  display: block;
+  width: 100%;
+}
+.form input:not(.form-btn) {
+  background: #f2f2f2;
+}

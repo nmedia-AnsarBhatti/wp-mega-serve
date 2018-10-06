@@ -1,0 +1,77 @@
+/*
+ ** ADMIN PANEL CSS 
+ *************************************************************/
+
+/*----------------------------------------
+ 	1- Quiz Types Template CSS
+    2- Checkbox Design CSS
+ 	3- Quiz template CSS
+------------------------------------------**/
+
+/* 
+**========== 1- Quiz Types Template CSS =========== 
+*/
+.wpqm-quiz-type-wrapper ul {
+    display: inline-flex;
+	margin-left: -6px;
+	margin-top: 6px;
+	width: 100%;
+	text-align: center;
+}
+.wpqm-quiz-type-wrapper ul li {
+	margin-left: 13px;
+    background-color: #31322f87;
+    color: white;
+    display: block;
+    cursor: pointer;
+    width: 100%;
+    padding: 30px 25px !important;
+    border-top-left-radius: 0px !important;
+    border-top-right-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
+}
+.wpqm-quiz-type-wrapper .wpmq-active-tab{
+	background-color: #4d20a4 !important;
+}
+
+/* 
+**========== 2- Checkbox Design CSS =========== 
+*/
+.wpmq-correct-answr input[type="checkbox"] { 
+    position: absolute;
+    opacity: 0; 
+    z-index: -1; 
+}
+.wpmq-correct-answr input[type="checkbox"]+span {
+    /*font: 10pt sans-serif;*/
+    color: #000; 
+}
+.wpmq-correct-answr input[type="checkbox"]+span:before { 
+    font: 16pt FontAwesome; 
+    content: '\00f096'; 
+    display: inline-block; 
+    width: 16pt; 
+    padding: 2px 0 0 3px; 
+    margin-right: 0.5em; 
+}
+.wpmq-correct-answr input[type="checkbox"]:checked+span:before { 
+    content: '\00f046'; 
+}
+.wpmq-correct-answr input[type="checkbox"]:focus+span:before {
+    outline: 1px dotted #aaa; 
+}
+.wpmq-correct-answr input[type="checkbox"]:disabled+span { 
+    color: #999; 
+}
+.wpmq-correct-answr input[type="checkbox"]:not(:disabled)+span:hover:before {
+    text-shadow: 0 1px 2px #77F; 
+}
+
+/* 
+**========== 3- Quiz template CSS =========== 
+*/
+.wpmq-questions-section .card{
+    max-width: 100%;
+    background-color: #f4f4f4;
+}
